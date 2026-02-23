@@ -62,14 +62,14 @@ flowchart LR
     I --> B --> D --> T --> DEV --> CI --> CD --> RUN --> LRN
   end
 
-  AI1[AI assist\nclarify problem\nreframe hypothesis]
-  AI2[AI assist\nstory slicing\nacceptance criteria]
-  AI3[AI assist\ndesign tradeoff exploration]
-  AI4[AI assist\ntest case generation]
-  AI5[AI assist\ncode scaffolding\nrefactor suggestions]
-  AI6[AI assist\nCI failure analysis]
-  AI7[AI assist\nlog and metric summarization]
-  AI8[AI assist\nretrospective signal clustering]
+  AI1[AI assist <br/> clarify problem <br/> reframe hypothesis]
+  AI2[AI assist <br/> story slicing <br/> acceptance criteria]
+  AI3[AI assist <br/> design tradeoff exploration]
+  AI4[AI assist <br/> test case generation]
+  AI5[AI assist <br/> code scaffolding <br/> refactor suggestions]
+  AI6[AI assist <br/> CI failure analysis]
+  AI7[AI assist <br/> log and metric summarization]
+  AI8[AI assist <br/> retrospective signal clustering]
 
   AI1 -.-> I
   AI2 -.-> B
@@ -90,14 +90,14 @@ Stream aligned teams generate real world signals that shape platform evolution.
 ``` mermaid
 flowchart LR
 
-  SA[Stream aligned team\nDelivers product outcomes]
-  PT[Platform team\nBuilds paved roads and guardrails]
+  SA[Stream aligned team <br/> Delivers product outcomes]
+  PT[Platform team <br/> Builds paved roads and guardrails]
 
-  SA -->|Feature needs\nPain points\nScaling limits| PT
-  PT -->|Templates\nTooling\nPolicies\nObservability| SA
+  SA -->|Feature needs <br/> Pain points <br/> Scaling limits| PT
+  PT -->|Templates <br/> Tooling<br>Policies <br/> Observability| SA
 
-  SA -->|Adoption metrics\nFailure patterns\nDX feedback| PT
-  PT -->|Platform roadmap\nCapability upgrades| SA
+  SA -->|Adoption metrics <br/> Failure patterns <br/> DX feedback| PT
+  PT -->|Platform roadmap <br/> Capability upgrades| SA
 ```
 ---
 
