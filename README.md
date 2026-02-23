@@ -1,76 +1,105 @@
-# AI-Assisted Agile Delivery Playbook
+# AI Assisted Agile Delivery Playbook
 
-A practical, systems-level playbook demonstrating how to blend:
+A practical, evolving playbook for teams that want to combine:
 
-- Lean-Agile systems thinking
-- Quality-Driven Delivery (QDD)
-- Shift-left engineering practices
-- AI-assisted workflow enablement
+- Lean systems thinking
+- Quality Driven Delivery (QDD)
+- Shift left engineering discipline
+- AI assisted workflow enablement
 
-to accelerate feedback loops, reduce cognitive load, and improve delivery outcomes at scale.
-
----
-
-## Why This Exists
-
-Modern teams struggle with:
-
-- Release anxiety
-- Slow feedback cycles
-- Late defect discovery
-- Overloaded dashboards
-- Misalignment between strategy and execution
-
-This repository demonstrates a structured approach to:
-
-- Build quality into the system
-- Move feedback left
-- Use AI to amplify signal interpretation
-- Preserve engineering rigor
-
-AI does not replace engineering discipline.
-AI reduces the time between signal and decision.
+to move from predictability to speed to mastery in value delivery.
 
 ---
 
-## Repository Map
+## Why This Repository Exists
 
-- 00-overview/  
-  Orientation and audience guidance
+Modern delivery systems fail because feedback arrives too late.
 
-- 01-system-model/  
-  Quality-Driven Delivery and shift-left model
+Requirements are clarified in production.
+Architecture is validated under load.
+Defects are discovered during integration.
+Learning is reactive instead of intentional.
 
-- 02-ai-injection-points/  
-  Where AI amplifies clarity, testing, CI, release, and learning
+This playbook demonstrates how to:
 
-- 03-reference-architecture/  
-  Guardrails, CI signals, runtime signals
+- Shorten feedback loops
+- Strengthen built in quality
+- Reduce cognitive load
+- Use AI as a signal amplifier
+- Design delivery systems that learn faster
 
-- 04-workflows/  
-  End-to-end practical walkthroughs
-
-- 05-starter-assets/  
-  Templates and CI examples
-
-- 06-leadership-conversations/  
-  Executive positioning and transformation framing
+AI is not a replacement for engineering rigor.
+AI amplifies disciplined systems.
 
 ---
 
-## Start Here
+## The Three Layer Model
 
-1. Read [ARCHITECTURE-AT-A-GLANCE.md](ARCHITECTURE-AT-A-GLANCE.md)  
-2. Review [01-system-model/](01-system-model)  
-3. Follow an end-to-end workflow in [04-workflows/](04-workflows)
+This repository is intentionally structured in three layers.
+
+Layer 1: Thesis  
+The opinionated foundation.  
+Quality Driven Delivery, shift left thinking, and AI as feedback amplifier.
+
+Layer 2: Workflow  
+The end to end journey from idea to production to learning.
+
+Layer 3: Role Guides  
+Concrete AI assistance patterns for Product Owners, Developers, DevOps, Platform teams, and Delivery Leaders.
+
+See ARCHITECTURE-AT-A-GLANCE.md for a visual overview.
 
 ---
 
-## Intended Audience
+## Who This Is For
 
+Primary audience:
+- Stream aligned product teams
+- DevOps and cloud platform teams
+- Product Owners and senior engineers
+- Agile teams looking to increase flow maturity
+
+Secondary audience:
 - Delivery Leaders
-- Platform and DevOps Engineers
+- Engineering Managers
 - Agile Coaches
 - Transformation Leads
-- Engineering Managers
 
+---
+
+## How To Use This
+
+If you are a team:
+
+1. Start with 00-thesis to understand the principles.
+2. Use 01-workflow as your shared map of delivery.
+3. Use 02-role-guides for role specific AI assistance.
+4. Follow 03-sample-walkthroughs to see a complete example.
+
+If you are a leader:
+
+- Use the workflow map to evaluate your current system.
+- Use enablement architecture to assess guardrails and signals.
+- Use the roadmap to guide incremental evolution.
+
+---
+
+## Current MVP Scope
+
+Version 0.1 focuses on:
+
+- A stream aligned team workflow
+- AI injection points across delivery
+- Role guides for Product Owner, Developer, and DevOps
+- A simple feature walkthrough
+- Thin enablement architecture
+
+See ROADMAP.md for upcoming iterations.
+
+---
+
+## Core Belief
+
+The goal is not more output.
+
+The goal is faster validated learning with less cognitive overload.
