@@ -6,7 +6,7 @@ This repository is a **practical playbook** for demonstrating how modern teams c
 - **Quality-Driven Delivery (QDD)** and shift-left practices
 - AI-assisted workflows
 
-…to improve **flow, quality, and learning** — without turning AI into hype or replacing engineering discipline.
+...to improve **flow, quality, and learning** - without turning AI into hype or replacing engineering discipline.
 
 ---
 
@@ -25,7 +25,7 @@ Use this to understand how investments in workflow, automation, and enablement t
 
 ## What This Repo Is Not
 
-- A vendor-specific “AI tools” catalog
+- A vendor-specific "AI tools" catalog
 - A promise that AI replaces engineering work
 - A generic Agile training manual
 
