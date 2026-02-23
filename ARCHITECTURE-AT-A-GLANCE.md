@@ -1,67 +1,158 @@
-# Architecture at a Glance
+# Architecture At A Glance
 
-This document provides a **visual orientation** to the *AI-Assisted Agile Delivery Playbook* repository.
-
-It shows **how the major conceptual areas relate to each other** without going into tool-specific implementation details.
-Use this as a map  not a specification.
+This repository is organized around a three-layer model designed to help teams move from predictability to speed to mastery in value delivery.
 
 ---
 
-## How to Use This Document
+## The Three Layers
 
-- Start with the **Repository Overview** diagram to understand scope
-- Jump to the diagram that matches the question youre asking
-- Follow the links in each section to go deeper
+Layer 1: Thesis  
+The opinionated foundation.  
+Quality Driven Delivery (QDD), shift-left thinking, and AI as a feedback amplifier.
 
-You do not need to read this file top-to-bottom.
+Layer 2: Workflow  
+The end-to-end journey from idea to production to learning.
+
+Layer 3: Role Guides  
+Practical AI assistance for Product Owners, Developers, Test Engineers, DevOps, Platform, and Delivery Leaders.
 
 ---
 
-## Repository Overview
+## How The Layers Fit Together
 
-**Purpose:** Show the major areas of this repository and how they fit together (orientation only  not flow).
+``` mermaid
+flowchart TB
+  T[00-thesis\nPrinciples and philosophy]
+  W[01-workflow\nIdea to production to learning]
+  R[02-role-guides\nAI assistance per role]
 
-```mermaid
-flowchart LR
-  R[Repository Root<br/>ai-assisted-agile-delivery-playbook]
-  O[00-overview<br/>scope & audiences]
-  S[01-system-model<br/>QDD + shift-left system]
-  A[02-ai-injection-points<br/>where AI amplifies feedback]
-  RA[03-reference-architecture<br/>workflow + guardrails]
-  W[04-workflows<br/>end-to-end walkthroughs]
-  AS[05-starter-assets<br/>templates & examples]
-  L[06-leadership-conversations<br/>talk tracks & FAQs]
-
-  R --> O
-  R --> S
-  R --> A
-  R --> RA
+  T --> W
   R --> W
-  R --> AS
-  R --> L
+
+  AA[ARCHITECTURE-AT-A-GLANCE.md\nVisual orientation]
+  AA --> T
+  AA --> W
+  AA --> R
 ```
+---
 
-## System Storyline
+## Stream Aligned Teams And Platform Teams
 
-**Purpose:** Establish the primary storyline: QDD + shift-left amplified by AI feedback loops.
+Most organizations split responsibilities across two primary team types:
+
+- Stream-aligned teams own product outcomes and business delivery.
+- Platform teams own paved roads, guardrails, and shared capabilities.
+
+The workflow spans both. The difference is where each team spends most of its time, and what done means.
 
 ``` mermaid
 flowchart LR
-  Q["Quality-Driven Delivery<br/>(QDD mindset)"]
-  SL["Shift-left feedback<br/>(requirements  design  test)"]
-  TE["Technical excellence<br/>(CI/CD, automation)"]
-  AI["AI-assisted enablement<br/>(reduce cognitive load)"]
-  OUT["Outcomes<br/>(flow, quality, learning)"]
 
-  Q --> SL --> TE --> OUT
-  AI --> SL
-  AI --> TE
+  subgraph WF[End to End Delivery Workflow]
+    I[Ideation and discovery]
+    B[Backlog and slicing]
+    D[Design and architecture]
+    T[Test strategy and QDD]
+    DEV[Code and review]
+    CI[CI signals and quality gates]
+    CD[Progressive delivery]
+    RUN[Runtime monitoring]
+    LRN[Learning and adaptation]
+
+    I --> B --> D --> T --> DEV --> CI --> CD --> RUN --> LRN
+  end
+
+  AI1[AI assist\nclarify problem\nreframe hypothesis]
+  AI2[AI assist\nstory slicing\nacceptance criteria]
+  AI3[AI assist\ndesign tradeoff exploration]
+  AI4[AI assist\ntest case generation]
+  AI5[AI assist\ncode scaffolding\nrefactor suggestions]
+  AI6[AI assist\nCI failure analysis]
+  AI7[AI assist\nlog and metric summarization]
+  AI8[AI assist\nretrospective signal clustering]
+
+  AI1 -.-> I
+  AI2 -.-> B
+  AI3 -.-> D
+  AI4 -.-> T
+  AI5 -.-> DEV
+  AI6 -.-> CI
+  AI7 -.-> RUN
+  AI8 -.-> LRN
 ```
+---
 
-### Diagram Index
-- Repository Overview  - see whats in the repo
-- System Storyline  - QDD + shift-left + AI feedback loops
-- AI Injection Points - where AI helps at requirements/design/test/code/ops
-- Reference Architecture - how workflows, guardrails, and monitoring connect
-- End-to-End Workflows - practical walkthroughs you can follow
+## Stream Aligned And Platform Team Feedback Loop
 
+Platform teams reduce cognitive load by providing paved roads.
+Stream aligned teams generate real world signals that shape platform evolution.
+
+``` mermaid
+flowchart LR
+
+  SA[Stream aligned team\nDelivers product outcomes]
+  PT[Platform team\nBuilds paved roads and guardrails]
+
+  SA -->|Feature needs\nPain points\nScaling limits| PT
+  PT -->|Templates\nTooling\nPolicies\nObservability| SA
+
+  SA -->|Adoption metrics\nFailure patterns\nDX feedback| PT
+  PT -->|Platform roadmap\nCapability upgrades| SA
+```
+---
+
+## Enablement Architecture
+
+The workflow is supported by platform capabilities that reduce cognitive load and increase safety:
+
+- Guardrails in CI/CD
+- Built-in quality practices
+- Observability and feedback signals
+- Platform templates and paved roads
+- Policy and compliance checks
+
+These are described in 04-enablement-architecture.
+
+---
+
+## AI As An Overlay
+
+AI is not a separate phase.
+
+AI is injected at key feedback points:
+
+- Requirement clarification
+- Story slicing
+- Test generation
+- Code scaffolding
+- CI signal interpretation
+- Monitoring analysis
+- Retrospective insight generation
+
+The goal is amplification of signal, not replacement of discipline.
+
+---
+
+## MVP Scope
+
+Current version focuses on:
+
+- Stream-aligned team workflow
+- Product Owner, Developer, DevOps roles
+- One simple feature walkthrough
+
+Future iterations will expand:
+
+- Platform team operating model and roadmap integration
+- Governance patterns for regulated environments
+- Data and AI delivery workflows
+- Advanced observability patterns
+
+---
+
+## Suggested Reading Order
+
+- Start with 00-thesis to understand the stance and vocabulary
+- Use 01-workflow as the shared map of how value moves
+- Use 02-role-guides when you want role-specific AI assistance
+- Use 03-sample-walkthroughs to see a complete example end-to-end
