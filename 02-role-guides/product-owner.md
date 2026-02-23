@@ -1,28 +1,63 @@
 # Product Owner Guide
-AI Assisted Quality Driven Backlog Management
+AI Assisted Discovery, Refinement, and Outcome Validation
 
-This guide helps Product Owners use AI responsibly to clarify intent, improve slicing, reduce ambiguity, and strengthen outcome alignment.
+## AI Injection Points For Product Owners
 
-AI is a thinking partner.
-It does not own prioritization.
-It does not own tradeoffs.
-It does not own accountability.
+``` mermaid
+flowchart LR
+
+A[Problem and Context] --> B[Outcome Hypothesis]
+B --> C[Backlog Shaping]
+C --> D[Story Refinement]
+D --> E[Acceptance Criteria]
+E --> F[Prioritization]
+F --> G[Release Planning]
+G --> H[Post Release Learning]
+H --> I[Backlog Adjustment]
+
+subgraph AI Assist Zones
+B:::ai
+C:::ai
+D:::ai
+E:::ai
+H:::ai
+I:::ai
+end
+
+classDef ai fill:#e6f2ff,stroke:#3366cc,stroke-width:2px
+```
+
+AI assists in:
+- Generating outcome hypotheses and options
+- Drafting story splits and refinement questions
+- Producing acceptance criteria examples and edge cases
+- Identifying missing stakeholders and dependencies
+- Summarizing feedback and metrics after release
+
+AI does not replace:
+- Product judgment and tradeoffs
+- Customer empathy and discovery
+- Final prioritization decisions
+- Agreement with the team on what done means
+
+---
+
+## Core Principle
+
+Use AI to increase clarity, not to increase output.
+If the backlog grows but shared understanding does not, you are going backwards.
 
 ---
 
 ## Where AI Helps The Most
 
-AI assistance is most valuable at these points:
+AI assistance is most valuable when you need:
 
-- Problem clarification
-- Hypothesis formation
-- Story slicing
-- Acceptance criteria refinement
-- Edge case exploration
-- Risk identification
-- Retrospective pattern recognition
-
-AI should amplify clarity, not generate bulk documentation.
+- Better questions for discovery and refinement
+- Faster conversion from goals to testable outcomes
+- Cleaner story slicing and dependency visibility
+- Stronger acceptance criteria and example mapping
+- Post release learning summaries that drive next decisions
 
 ---
 
