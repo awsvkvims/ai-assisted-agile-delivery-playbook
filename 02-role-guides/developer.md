@@ -1,11 +1,41 @@
 # Developer Guide
 AI Assisted Quality Driven Engineering
 
-This guide helps developers use AI to strengthen built in quality, reduce cognitive load, and accelerate validated learning without compromising engineering rigor.
+## AI Injection Points For Developers
 
-AI is a collaborator.
-It is not the author of record.
-You own the code.
+``` mermaid
+flowchart LR
+
+A[Refined Story] --> B[Test Design]
+B --> C[Code Implementation]
+C --> D[Local Validation]
+D --> E[Pull Request]
+E --> F[CI Pipeline]
+F --> G[Deploy]
+G --> H[Telemetry and Logs]
+H --> I[Retrospective Learning]
+
+subgraph AI Assist Zones
+B:::ai
+C:::ai
+F:::ai
+H:::ai
+end
+
+classDef ai fill:#e6f2ff,stroke:#3366cc,stroke-width:2px
+```
+
+AI assists in:
+- Expanding edge cases during Test Design
+- Code scaffolding and refactoring during Implementation
+- CI log interpretation during Pipeline failures
+- Log and telemetry summarization during Production analysis
+
+AI does not replace:
+- Engineering judgment
+- Code review
+- Architectural decisions
+- Security validation
 
 ---
 
